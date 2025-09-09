@@ -73,17 +73,15 @@ class HabitTrackerApp extends Application.AppBase {
                 loadedHistory[i] = storage.get(201 + i);
             }
             if (savedDate != today) {
-                
+                // Only add yesterday's completed count if the day changed
                 if (loadedHistory.size() < 7) {
                     _history = loadedHistory;
                 } else {
-                    
                     _history = new Array<Number>[6];
                     for (var i = 0; i < 6; i++) {
                         _history[i] = loadedHistory[i+1];
                     }
                 }
-                
                 _history.add(getCompletedCount());
                 resetProgress();
             } else {
@@ -92,6 +90,11 @@ class HabitTrackerApp extends Application.AppBase {
                     _progress[i] = storage.get(i);
                 }
             }
+        } else {
+            // If no storage, initialize progress/history but do NOT reset progress
+            _progress = new Array<Number>[5];
+            for (var i = 0; i < 5; i++) { _progress[i] = 0; }
+            _history = new Array<Number>[0];
         }
     }
 
@@ -147,11 +150,18 @@ class HabitTrackerApp extends Application.AppBase {
     }
 
     function getHistoryWithToday() as Array<Number> {
-        var hist = new Array<Number>[_history.size() + 1];
+        // Only add today's progress if not already present
+        var hist = new Array<Number>[_history.size()];
         for (var i = 0; i < _history.size(); i++) {
             hist[i] = _history[i];
         }
-        hist[_history.size()] = getCompletedCount();
+        // If today is not already in history, add it for display only
+        if (_history.size() == 0 || _history[_history.size()-1] != getCompletedCount()) {
+            var histWithToday = new Array<Number>[hist.size() + 1];
+            for (var i = 0; i < hist.size(); i++) { histWithToday[i] = hist[i]; }
+            histWithToday[hist.size()] = getCompletedCount();
+            return histWithToday;
+        }
         return hist;
     }
 }
