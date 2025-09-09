@@ -11,87 +11,142 @@ class HabitTrackerView extends WatchUi.View {
         0x448AFF,  
         0xFF9800   
     ];
+    private var _pageIndex as Number = 0;
 
     function initialize() {
         View.initialize();
     }
 
-    // Load your resources here
+    
     function onLayout(dc as Dc) as Void {
         _fontHeight = dc.getFontHeight(Graphics.FONT_MEDIUM);
         _itemHeight = _fontHeight + 8; 
     }
 
-    // Update the view
+    
     function onUpdate(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
 
-        var app = Application.getApp() as HabitTrackerApp;
-        var progress = app.getProgress();
-        var selectedIndex = app.getSelectedIndex();
+        if (_pageIndex == 0) {
+            var app = Application.getApp() as HabitTrackerApp;
+            var progress = app.getProgress();
+            var selectedIndex = app.getSelectedIndex();
 
-        var emojis = ["💊", "🧪", "🏋️", "📚", "🧘"];
+            var emojis = ["💊", "🧪", "🏋️", "📚", "🧘"];
 
-        var cols = 2;
-        var rows = 3;
-        var cellW = (dc.getWidth() - 40) / cols;
-        var cellH = (dc.getHeight() - 60) / rows;
-        var iconSize = cellH * 0.5;
+            var cols = 2;
+            var rows = 3;
+            var cellW = (dc.getWidth() - 40) / cols;
+            var cellH = (dc.getHeight() - 60) / rows;
+            var iconSize = cellH * 0.5;
 
-        // Draw grid
-        for (var i = 0; i < 6; i++) {
-            var col = i % cols;
-            var row = (i / cols).toNumber();
-            var x = 20 + col * cellW;
-            var y = 30 + row * cellH;
-
-            var fieldCenterX = x + (cellW-10)/2;
-            var fieldCenterY = y + (cellH-10)/2;
-            var fieldRadius = ((cellW-10) < (cellH-10) ? (cellW-10) : (cellH-10)) / 2 - 4;
-
-            if (i < 5) {
-                var borderColor;
-                if (i == selectedIndex) {
-                    borderColor = _colors[2]; // blue  selected
-                } else if (progress[i] >= 1) {
-                    borderColor = _colors[0]; // green completed
-                } else {
-                    borderColor = Graphics.COLOR_WHITE; // white incomplete
-                }
-                dc.setColor(borderColor, Graphics.COLOR_TRANSPARENT);
-                dc.setPenWidth(4);
-                dc.drawCircle(fieldCenterX, fieldCenterY, fieldRadius);
-                dc.setPenWidth(1);
-            }
-
-            if (i < 5) {
             
+            for (var i = 0; i < 6; i++) {
+                var col = i % cols;
+                var row = (i / cols).toNumber();
+                var x = 20 + col * cellW;
+                var y = 30 + row * cellH;
+
+                var fieldCenterX = x + (cellW-10)/2;
+                var fieldCenterY = y + (cellH-10)/2;
+                var fieldRadius = ((cellW-10) < (cellH-10) ? (cellW-10) : (cellH-10)) / 2 - 4;
+
+                if (i < 5) {
+                    var borderColor;
+                    if (i == selectedIndex) {
+                        borderColor = _colors[2];
+                    } else if (progress[i] >= 1) {
+                        borderColor = _colors[0];
+                    } else {
+                        borderColor = Graphics.COLOR_WHITE;
+                    }
+                    dc.setColor(borderColor, Graphics.COLOR_TRANSPARENT);
+                    dc.setPenWidth(4);
+                    dc.drawCircle(fieldCenterX, fieldCenterY, fieldRadius);
+                    dc.setPenWidth(1);
+                }
+
+                if (i < 5) {
+                
+                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                    dc.drawText(fieldCenterX, fieldCenterY, Graphics.FONT_LARGE, emojis[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+                    if (progress[i] >= 1) {
+                        dc.setColor(_colors[0], Graphics.COLOR_TRANSPARENT);
+                        drawCheckmark(dc, fieldCenterX, (fieldCenterY + iconSize/2 + 8).toNumber());
+                    }
+                } else {
+
+                    var completed = app.getCompletedCount();
+                    var barW = cellW-30;
+                    var barH = 14;
+                    var barX = x + 15;
+                    var barY = y + (cellH-10)/2 - barH/2;
+
+                    var barColor = (completed == 5) ? _colors[0] : _colors[3];
+                    dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+                    dc.fillRoundedRectangle(barX, barY, barW, barH, barH/2);
+                    dc.setColor(0x222222, Graphics.COLOR_TRANSPARENT);
+                    dc.drawRoundedRectangle(barX, barY, barW, barH, barH/2);
+                    if (completed > 0) {
+                        dc.setColor(barColor, Graphics.COLOR_TRANSPARENT);
+                        dc.fillRoundedRectangle(barX, barY, (completed * barW / 5).toNumber(), barH, barH/2);
+                    }
+
+                }
+            }
+        } else {
+            
+            var app = Application.getApp() as HabitTrackerApp;
+            var history = app.getHistoryWithToday();
+            var barMax = 5;
+            var barCount = history.size();
+            if (barCount == 1) {
+                history = [history[0]];
+                barCount = 1;
+            }
+            var graphW = dc.getWidth() - 80;
+            var graphH = 100;
+            var barW = graphW / (barCount > 0 ? barCount : 1);
+            var centerY = dc.getHeight()/2;
+            var baseY = centerY + graphH/2;
+            var topY = 40;
+            
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(dc.getWidth()/2, topY, Graphics.FONT_SMALL, "Last 7 Days", Graphics.TEXT_JUSTIFY_CENTER);
+            
+            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawLine(40, baseY, 40 + graphW, baseY);
+            
+            for (var i = 0; i < barCount; i++) {
+                var val = history[i];
+                if (val < 0) { val = 0; }
+                if (val > barMax) { val = barMax; }
+                var x = 40 + i * barW + barW/4;
+                var h = (val * graphH / barMax).toNumber();
+                if (h < 0) { h = 0; }
+                var y = baseY - h;
+                
+                if (i > 0) {
+                    var fadedColor = 0xAAD8FF;
+                    dc.setColor(fadedColor, Graphics.COLOR_TRANSPARENT);
+                    dc.setPenWidth(2);
+                    
+                    var dotYStart = baseY - graphH + 10;
+                    var dotYEnd = baseY + 10;
+                    for (var dotY = dotYStart; dotY < dotYEnd; dotY += 6) {
+                        dc.drawLine(x - barW/4, dotY, x - barW/4, dotY + 2);
+                    }
+                    dc.setPenWidth(1);
+                }
+                
+                var barColor = (val == barMax) ? _colors[0] : _colors[3];
+                dc.setColor(barColor, Graphics.COLOR_TRANSPARENT);
+                dc.fillRoundedRectangle(x, y, barW/2, h, 6);
+                
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(fieldCenterX, fieldCenterY, Graphics.FONT_LARGE, emojis[i], Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
-                if (progress[i] >= 1) {
-                    dc.setColor(_colors[0], Graphics.COLOR_TRANSPARENT);
-                    drawCheckmark(dc, fieldCenterX, (fieldCenterY + iconSize/2 + 8).toNumber());
-                }
-            } else {
-
-                var completed = app.getCompletedCount();
-                var barW = cellW-30;
-                var barH = 14;
-                var barX = x + 15;
-                var barY = y + (cellH-10)/2 - barH/2;
-
-                var barColor = (completed == 5) ? _colors[0] : _colors[3];
-                dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-                dc.fillRoundedRectangle(barX, barY, barW, barH, barH/2);
-                dc.setColor(0x222222, Graphics.COLOR_TRANSPARENT);
-                dc.drawRoundedRectangle(barX, barY, barW, barH, barH/2);
-                if (completed > 0) {
-                    dc.setColor(barColor, Graphics.COLOR_TRANSPARENT);
-                    dc.fillRoundedRectangle(barX, barY, (completed * barW / 5).toNumber(), barH, barH/2);
-                }
-
+                dc.drawText(x + barW/4, baseY + 18, Graphics.FONT_MEDIUM, val.toString(), Graphics.TEXT_JUSTIFY_CENTER);
             }
         }
     }
@@ -157,6 +212,13 @@ class HabitTrackerView extends WatchUi.View {
         }
         app.setSelectedIndex(newIndex);
         WatchUi.requestUpdate();
+    }
+
+    function setPageIndex(idx as Number) {
+        _pageIndex = idx;
+    }
+    function getPageIndex() as Number {
+        return _pageIndex;
     }
 }
 

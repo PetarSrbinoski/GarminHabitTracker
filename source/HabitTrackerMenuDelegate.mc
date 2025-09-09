@@ -3,7 +3,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 
 class HabitTrackerMenuDelegate extends WatchUi.MenuInputDelegate {
-
+    
     function initialize() {
         MenuInputDelegate.initialize();
     }
