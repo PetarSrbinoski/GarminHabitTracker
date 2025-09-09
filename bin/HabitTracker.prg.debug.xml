@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\petar\Desktop\HabitTracker\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="1" lineNum="7" parent="globals/HabitTrackerApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="2" lineNum="123" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="2" lineNum="124" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="4" lineNum="5" parent="globals/HabitTrackerMenuDelegate" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="5" lineNum="5" parent="globals/HabitTrackerView" pc="268435525" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="6" lineNum="6" parent="globals/HabitTrackerDelegate" pc="268435537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="7" lineNum="80" parent="globals/HabitTrackerApp" pc="268435549" symbol="getHabits"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="7" lineNum="81" parent="globals/HabitTrackerApp" pc="268435551" symbol="getHabits"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="8" lineNum="88" parent="globals/HabitTrackerApp" pc="268435557" symbol="incrementHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="8" lineNum="89" parent="globals/HabitTrackerApp" pc="268435559" symbol="incrementHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="8" lineNum="90" parent="globals/HabitTrackerApp" pc="268435573" symbol="incrementHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="8" lineNum="91" parent="globals/HabitTrackerApp" pc="268435583" symbol="incrementHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="57" parent="globals/HabitTrackerApp" pc="268435594" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="58" parent="globals/HabitTrackerApp" pc="268435597" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="59" parent="globals/HabitTrackerApp" pc="268435616" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="60" parent="globals/HabitTrackerApp" pc="268435622" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="61" parent="globals/HabitTrackerApp" pc="268435636" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="62" parent="globals/HabitTrackerApp" pc="268435648" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="64" parent="globals/HabitTrackerApp" pc="268435658" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="9" lineNum="65" parent="globals/HabitTrackerApp" pc="268435669" symbol="checkAndResetForNewDay"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="10" lineNum="35" parent="globals/HabitTrackerApp" pc="268435703" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="10" lineNum="36" parent="globals/HabitTrackerApp" pc="268435706" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="10" lineNum="37" parent="globals/HabitTrackerApp" pc="268435726" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="10" lineNum="38" parent="globals/HabitTrackerApp" pc="268435746" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="10" lineNum="39" parent="globals/HabitTrackerApp" pc="268435758" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="11" lineNum="42" parent="globals/HabitTrackerApp" pc="268435773" symbol="resetProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="11" lineNum="43" parent="globals/HabitTrackerApp" pc="268435776" symbol="resetProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="11" lineNum="44" parent="globals/HabitTrackerApp" pc="268435787" symbol="resetProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="12" lineNum="84" parent="globals/HabitTrackerApp" pc="268435807" symbol="getProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="12" lineNum="85" parent="globals/HabitTrackerApp" pc="268435809" symbol="getProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="13" lineNum="25" parent="globals/HabitTrackerApp" pc="268435815" symbol="onStart"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="13" lineNum="26" parent="globals/HabitTrackerApp" pc="268435817" symbol="onStart"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="48" parent="globals/HabitTrackerApp" pc="268435825" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="49" parent="globals/HabitTrackerApp" pc="268435828" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="50" parent="globals/HabitTrackerApp" pc="268435832" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="51" parent="globals/HabitTrackerApp" pc="268435852" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="53" parent="globals/HabitTrackerApp" pc="268435882" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="14" lineNum="54" parent="globals/HabitTrackerApp" pc="268435900" symbol="saveProgress"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="15" lineNum="95" parent="globals/HabitTrackerApp" pc="268435921" symbol="toggleHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="15" lineNum="96" parent="globals/HabitTrackerApp" pc="268435923" symbol="toggleHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="15" lineNum="97" parent="globals/HabitTrackerApp" pc="268435937" symbol="toggleHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="15" lineNum="99" parent="globals/HabitTrackerApp" pc="268435949" symbol="toggleHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="15" lineNum="101" parent="globals/HabitTrackerApp" pc="268435959" symbol="toggleHabit"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="16" lineNum="104" parent="globals/HabitTrackerApp" pc="268435967" symbol="getSelectedIndex"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="16" lineNum="105" parent="globals/HabitTrackerApp" pc="268435969" symbol="getSelectedIndex"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="17" lineNum="71" parent="globals/HabitTrackerApp" pc="268435975" symbol="getCurrentDateString"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="17" lineNum="72" parent="globals/HabitTrackerApp" pc="268435978" symbol="getCurrentDateString"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="17" lineNum="73" parent="globals/HabitTrackerApp" pc="268436003" symbol="getCurrentDateString"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="112" parent="globals/HabitTrackerApp" pc="268436078" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="113" parent="globals/HabitTrackerApp" pc="268436081" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="114" parent="globals/HabitTrackerApp" pc="268436084" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="115" parent="globals/HabitTrackerApp" pc="268436104" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="116" parent="globals/HabitTrackerApp" pc="268436118" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="18" lineNum="119" parent="globals/HabitTrackerApp" pc="268436138" symbol="getCompletedCount"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="19" lineNum="18" parent="globals/HabitTrackerApp" pc="268436141" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="19" lineNum="19" parent="globals/HabitTrackerApp" pc="268436143" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="19" lineNum="20" parent="globals/HabitTrackerApp" pc="268436155" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="19" lineNum="21" parent="globals/HabitTrackerApp" pc="268436165" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="20" lineNum="108" parent="globals/HabitTrackerApp" pc="268436173" symbol="setSelectedIndex"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="20" lineNum="109" parent="globals/HabitTrackerApp" pc="268436175" symbol="setSelectedIndex"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="21" lineNum="30" parent="globals/HabitTrackerApp" pc="268436185" symbol="onStop"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerApp.mc" id="21" lineNum="31" parent="globals/HabitTrackerApp" pc="268436187" symbol="onStop"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="22" lineNum="11" parent="globals/HabitTrackerMenuDelegate" pc="268436195" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="22" lineNum="12" parent="globals/HabitTrackerMenuDelegate" pc="268436197" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="22" lineNum="13" parent="globals/HabitTrackerMenuDelegate" pc="268436208" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="22" lineNum="14" parent="globals/HabitTrackerMenuDelegate" pc="268436229" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="22" lineNum="15" parent="globals/HabitTrackerMenuDelegate" pc="268436240" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="23" lineNum="7" parent="globals/HabitTrackerMenuDelegate" pc="268436262" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerMenuDelegate.mc" id="23" lineNum="8" parent="globals/HabitTrackerMenuDelegate" pc="268436264" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="124" parent="globals/HabitTrackerView" pc="268436277" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="125" parent="globals/HabitTrackerView" pc="268436280" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="127" parent="globals/HabitTrackerView" pc="268436284" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="128" parent="globals/HabitTrackerView" pc="268436296" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="129" parent="globals/HabitTrackerView" pc="268436326" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="24" lineNum="130" parent="globals/HabitTrackerView" pc="268436359" symbol="drawModernCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="25" lineNum="133" parent="globals/HabitTrackerView" pc="268436372" symbol="drawProgressCircle"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="25" lineNum="135" parent="globals/HabitTrackerView" pc="268436374" symbol="drawProgressCircle"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="25" lineNum="136" parent="globals/HabitTrackerView" pc="268436388" symbol="drawProgressCircle"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="25" lineNum="139" parent="globals/HabitTrackerView" pc="268436404" symbol="drawProgressCircle"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="151" parent="globals/HabitTrackerView" pc="268436421" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="152" parent="globals/HabitTrackerView" pc="268436424" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="153" parent="globals/HabitTrackerView" pc="268436436" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="154" parent="globals/HabitTrackerView" pc="268436445" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="155" parent="globals/HabitTrackerView" pc="268436455" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="156" parent="globals/HabitTrackerView" pc="268436462" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="158" parent="globals/HabitTrackerView" pc="268436469" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="26" lineNum="159" parent="globals/HabitTrackerView" pc="268436481" symbol="moveSelection"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="99" parent="globals/HabitTrackerView" pc="268436493" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="100" parent="globals/HabitTrackerView" pc="268436496" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="101" parent="globals/HabitTrackerView" pc="268436500" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="102" parent="globals/HabitTrackerView" pc="268436512" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="103" parent="globals/HabitTrackerView" pc="268436542" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="27" lineNum="104" parent="globals/HabitTrackerView" pc="268436578" symbol="drawCheckmark"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="107" parent="globals/HabitTrackerView" pc="268436591" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="109" parent="globals/HabitTrackerView" pc="268436594" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="110" parent="globals/HabitTrackerView" pc="268436610" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="113" parent="globals/HabitTrackerView" pc="268436633" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="114" parent="globals/HabitTrackerView" pc="268436640" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="115" parent="globals/HabitTrackerView" pc="268436660" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="116" parent="globals/HabitTrackerView" pc="268436676" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="119" parent="globals/HabitTrackerView" pc="268436699" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="28" lineNum="120" parent="globals/HabitTrackerView" pc="268436716" symbol="drawModernProgressBar"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="29" lineNum="20" parent="globals/HabitTrackerView" pc="268436759" symbol="onLayout"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="29" lineNum="21" parent="globals/HabitTrackerView" pc="268436761" symbol="onLayout"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="29" lineNum="22" parent="globals/HabitTrackerView" pc="268436779" symbol="onLayout"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="142" parent="globals/HabitTrackerView" pc="268436795" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="143" parent="globals/HabitTrackerView" pc="268436798" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="144" parent="globals/HabitTrackerView" pc="268436802" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="145" parent="globals/HabitTrackerView" pc="268436813" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="146" parent="globals/HabitTrackerView" pc="268436830" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="30" lineNum="147" parent="globals/HabitTrackerView" pc="268436846" symbol="drawGradientShadow"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="31" lineNum="15" parent="globals/HabitTrackerView" pc="268436911" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="31" lineNum="16" parent="globals/HabitTrackerView" pc="268436913" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="26" parent="globals/HabitTrackerView" pc="268436926" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="27" parent="globals/HabitTrackerView" pc="268436929" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="28" parent="globals/HabitTrackerView" pc="268436941" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="30" parent="globals/HabitTrackerView" pc="268436949" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="31" parent="globals/HabitTrackerView" pc="268436961" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="32" parent="globals/HabitTrackerView" pc="268436970" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="34" parent="globals/HabitTrackerView" pc="268436979" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="36" parent="globals/HabitTrackerView" pc="268436986" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="37" parent="globals/HabitTrackerView" pc="268436990" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="38" parent="globals/HabitTrackerView" pc="268436994" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="39" parent="globals/HabitTrackerView" pc="268437009" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="40" parent="globals/HabitTrackerView" pc="268437024" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="43" parent="globals/HabitTrackerView" pc="268437034" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="44" parent="globals/HabitTrackerView" pc="268437045" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="45" parent="globals/HabitTrackerView" pc="268437052" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="46" parent="globals/HabitTrackerView" pc="268437065" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="47" parent="globals/HabitTrackerView" pc="268437075" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="49" parent="globals/HabitTrackerView" pc="268437085" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="50" parent="globals/HabitTrackerView" pc="268437098" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="51" parent="globals/HabitTrackerView" pc="268437111" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="53" parent="globals/HabitTrackerView" pc="268437146" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="55" parent="globals/HabitTrackerView" pc="268437154" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="56" parent="globals/HabitTrackerView" pc="268437162" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="57" parent="globals/HabitTrackerView" pc="268437175" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="58" parent="globals/HabitTrackerView" pc="268437186" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="60" parent="globals/HabitTrackerView" pc="268437198" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="62" parent="globals/HabitTrackerView" pc="268437205" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="63" parent="globals/HabitTrackerView" pc="268437219" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="64" parent="globals/HabitTrackerView" pc="268437231" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="65" parent="globals/HabitTrackerView" pc="268437247" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="68" parent="globals/HabitTrackerView" pc="268437262" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="70" parent="globals/HabitTrackerView" pc="268437270" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="71" parent="globals/HabitTrackerView" pc="268437287" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="73" parent="globals/HabitTrackerView" pc="268437310" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="74" parent="globals/HabitTrackerView" pc="268437321" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="75" parent="globals/HabitTrackerView" pc="268437340" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="79" parent="globals/HabitTrackerView" pc="268437376" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="80" parent="globals/HabitTrackerView" pc="268437385" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="81" parent="globals/HabitTrackerView" pc="268437392" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="82" parent="globals/HabitTrackerView" pc="268437396" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="83" parent="globals/HabitTrackerView" pc="268437403" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="85" parent="globals/HabitTrackerView" pc="268437422" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="86" parent="globals/HabitTrackerView" pc="268437450" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="87" parent="globals/HabitTrackerView" pc="268437466" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="88" parent="globals/HabitTrackerView" pc="268437489" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="89" parent="globals/HabitTrackerView" pc="268437505" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="90" parent="globals/HabitTrackerView" pc="268437528" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="91" parent="globals/HabitTrackerView" pc="268437535" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerView.mc" id="32" lineNum="92" parent="globals/HabitTrackerView" pc="268437549" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="33" lineNum="14" parent="globals/HabitTrackerDelegate" pc="268437598" symbol="setView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="33" lineNum="15" parent="globals/HabitTrackerDelegate" pc="268437600" symbol="setView"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="34" lineNum="9" parent="globals/HabitTrackerDelegate" pc="268437610" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="34" lineNum="10" parent="globals/HabitTrackerDelegate" pc="268437612" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="34" lineNum="11" parent="globals/HabitTrackerDelegate" pc="268437624" symbol="initialize"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="18" parent="globals/HabitTrackerDelegate" pc="268437633" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="19" parent="globals/HabitTrackerDelegate" pc="268437636" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="20" parent="globals/HabitTrackerDelegate" pc="268437645" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="21" parent="globals/HabitTrackerDelegate" pc="268437661" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="22" parent="globals/HabitTrackerDelegate" pc="268437673" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="23" parent="globals/HabitTrackerDelegate" pc="268437690" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="24" parent="globals/HabitTrackerDelegate" pc="268437700" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="25" parent="globals/HabitTrackerDelegate" pc="268437728" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="27" parent="globals/HabitTrackerDelegate" pc="268437753" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="28" parent="globals/HabitTrackerDelegate" pc="268437764" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="29" parent="globals/HabitTrackerDelegate" pc="268437769" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="30" parent="globals/HabitTrackerDelegate" pc="268437777" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="31" parent="globals/HabitTrackerDelegate" pc="268437786" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="33" parent="globals/HabitTrackerDelegate" pc="268437805" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="34" parent="globals/HabitTrackerDelegate" pc="268437810" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="35" parent="globals/HabitTrackerDelegate" pc="268437818" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="36" parent="globals/HabitTrackerDelegate" pc="268437827" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="38" parent="globals/HabitTrackerDelegate" pc="268437846" symbol="onKey"/>
+        <entry filename="C:\\Users\\petar\\Desktop\\HabitTracker\\source\\HabitTrackerDelegate.mc" id="35" lineNum="40" parent="globals/HabitTrackerDelegate" pc="268437851" symbol="onKey"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="14" parent="globals/Rez/Layouts" pc="268437853" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="15" parent="globals/Rez/Layouts" pc="268437864" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="17" parent="globals/Rez/Layouts" pc="268437964" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="18" parent="globals/Rez/Layouts" pc="268438048" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="36" lineNum="20" parent="globals/Rez/Layouts" pc="268438080" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="37" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268438095" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268438107" symbol="initialize"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268438109" symbol="initialize"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438121" symbol="initialize"/>
+        <entry filename="c:\\Users\\petar\\Desktop\\HabitTracker\\bin\\gen\\006-B4257-00\\source\\Rez.mcgen" id="38" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268438166" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="30" method="true" symbol="drawCheckmark"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="34" method="true" symbol="drawProgressCircle"/>
+        <entry id="31" method="true" symbol="drawGradientShadow"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="20" method="true" symbol="incrementHabit"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="40" method="true" symbol="MainLayout"/>
+        <entry id="27" symbol="&lt;globals/HabitTrackerView/&lt;&gt;_colors&gt;"/>
+        <entry field="true" id="28" symbol="&lt;globals/HabitTrackerView/&lt;&gt;_fontHeight&gt;"/>
+        <entry field="true" id="29" symbol="&lt;globals/HabitTrackerView/&lt;&gt;_itemHeight&gt;"/>
+        <entry id="32" method="true" symbol="drawModernCheckmark"/>
+        <entry id="16" method="true" symbol="getCurrentDateString"/>
+        <entry field="true" id="12" symbol="&lt;globals/HabitTrackerApp/&lt;&gt;_progress&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8" object="true" symbol="HabitTrackerDelegate"/>
+        <entry id="10" object="true" symbol="HabitTrackerView"/>
+        <entry field="true" id="42" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="37" method="true" symbol="setView"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="45" symbol="prompt"/>
+        <entry field="true" id="39" symbol="id_monkey"/>
+        <entry id="11" symbol="&lt;globals/HabitTrackerApp/&lt;&gt;_habits&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="15" method="true" symbol="getCompletedCount"/>
+        <entry id="14" method="true" symbol="checkAndResetForNewDay"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="13" symbol="&lt;globals/HabitTrackerApp/&lt;&gt;_selectedIndex&gt;"/>
+        <entry id="7" object="true" symbol="HabitTrackerApp"/>
+        <entry id="47" symbol="item_2"/>
+        <entry id="46" symbol="item_1"/>
+        <entry id="26" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="21" method="true" symbol="resetProgress"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="23" method="true" symbol="setSelectedIndex"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="18" method="true" symbol="getProgress"/>
+        <entry id="17" method="true" symbol="getHabits"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="33" method="true" symbol="drawModernProgressBar"/>
+        <entry id="22" method="true" symbol="saveProgress"/>
+        <entry id="41" object="true" symbol="MainMenu"/>
+        <entry id="35" method="true" symbol="moveSelection"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="24" method="true" symbol="toggleHabit"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="38" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="19" method="true" symbol="getSelectedIndex"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389109" method="true" symbol="onMenuItem"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="8389097" method="true" symbol="onKey"/>
+        <entry field="true" id="36" symbol="&lt;globals/HabitTrackerDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="25" module="true" symbol="Layouts"/>
+        <entry id="8388636" module="true" symbol="Attention"/>
+        <entry id="9" object="true" symbol="HabitTrackerMenuDelegate"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="44" symbol="menu_label_2"/>
+        <entry field="true" id="43" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435593" name="index" stackId="1" startPc="268435557"/>
+        <entry endPc="268435701" name="storage" stackId="1" startPc="268435597"/>
+        <entry endPc="268435698" name="savedDate" stackId="2" startPc="268435622"/>
+        <entry endPc="268435698" name="i" stackId="3" startPc="268435669"/>
+        <entry endPc="268435772" name="view" stackId="1" startPc="268435706"/>
+        <entry endPc="268435772" name="delegate" stackId="2" startPc="268435706"/>
+        <entry endPc="268435805" name="i" stackId="1" startPc="268435787"/>
+        <entry arg="true" endPc="268435824" name="state" stackId="1" startPc="268435815"/>
+        <entry endPc="268435919" name="storage" stackId="1" startPc="268435828"/>
+        <entry endPc="268435881" name="i" stackId="2" startPc="268435852"/>
+        <entry arg="true" endPc="268435966" name="index" stackId="1" startPc="268435921"/>
+        <entry endPc="268436077" name="today" stackId="1" startPc="268435978"/>
+        <entry endPc="268436140" name="count" stackId="1" startPc="268436081"/>
+        <entry endPc="268436137" name="i" stackId="2" startPc="268436104"/>
+        <entry arg="true" endPc="268436184" name="index" stackId="1" startPc="268436173"/>
+        <entry arg="true" endPc="268436194" name="state" stackId="1" startPc="268436185"/>
+        <entry arg="true" endPc="268436261" name="item" stackId="1" startPc="268436195"/>
+        <entry arg="true" endPc="268436371" name="dc" stackId="1" startPc="268436277"/>
+        <entry arg="true" endPc="268436371" name="x" stackId="2" startPc="268436277"/>
+        <entry arg="true" endPc="268436371" name="y" stackId="3" startPc="268436277"/>
+        <entry endPc="268436370" name="size" stackId="4" startPc="268436280"/>
+        <entry arg="true" endPc="268436420" name="dc" stackId="1" startPc="268436372"/>
+        <entry arg="true" endPc="268436420" name="x" stackId="2" startPc="268436372"/>
+        <entry arg="true" endPc="268436420" name="y" stackId="3" startPc="268436372"/>
+        <entry arg="true" endPc="268436420" name="radius" stackId="4" startPc="268436372"/>
+        <entry arg="true" endPc="268436420" name="color" stackId="5" startPc="268436372"/>
+        <entry arg="true" endPc="268436492" name="move" stackId="1" startPc="268436421"/>
+        <entry endPc="268436491" name="app" stackId="2" startPc="268436424"/>
+        <entry endPc="268436491" name="currentIndex" stackId="3" startPc="268436424"/>
+        <entry endPc="268436491" name="newIndex" stackId="4" startPc="268436424"/>
+        <entry arg="true" endPc="268436590" name="dc" stackId="1" startPc="268436493"/>
+        <entry arg="true" endPc="268436590" name="x" stackId="2" startPc="268436493"/>
+        <entry arg="true" endPc="268436590" name="y" stackId="3" startPc="268436493"/>
+        <entry endPc="268436589" name="size" stackId="4" startPc="268436496"/>
+        <entry arg="true" endPc="268436758" name="dc" stackId="1" startPc="268436591"/>
+        <entry arg="true" endPc="268436758" name="x" stackId="2" startPc="268436591"/>
+        <entry arg="true" endPc="268436758" name="y" stackId="3" startPc="268436591"/>
+        <entry arg="true" endPc="268436758" name="width" stackId="4" startPc="268436591"/>
+        <entry arg="true" endPc="268436758" name="height" stackId="5" startPc="268436591"/>
+        <entry arg="true" endPc="268436758" name="percentage" stackId="6" startPc="268436591"/>
+        <entry endPc="268436754" name="progressWidth" stackId="7" startPc="268436640"/>
+        <entry arg="true" endPc="268436794" name="dc" stackId="1" startPc="268436759"/>
+        <entry arg="true" endPc="268436910" name="dc" stackId="1" startPc="268436795"/>
+        <entry arg="true" endPc="268436910" name="y" stackId="2" startPc="268436795"/>
+        <entry arg="true" endPc="268436910" name="isTop" stackId="3" startPc="268436795"/>
+        <entry endPc="268436909" name="height" stackId="4" startPc="268436798"/>
+        <entry endPc="268436909" name="i" stackId="5" startPc="268436813"/>
+        <entry endPc="268436899" name="alpha" stackId="6" startPc="268436813"/>
+        <entry arg="true" endPc="268437597" name="dc" stackId="1" startPc="268436926"/>
+        <entry endPc="268437596" name="app" stackId="2" startPc="268436929"/>
+        <entry endPc="268437596" name="progress" stackId="3" startPc="268436929"/>
+        <entry endPc="268437596" name="selectedIndex" stackId="4" startPc="268436929"/>
+        <entry endPc="268437596" name="emojis" stackId="5" startPc="268436929"/>
+        <entry endPc="268437596" name="cols" stackId="6" startPc="268436929"/>
+        <entry endPc="268437596" name="rows" stackId="7" startPc="268436929"/>
+        <entry endPc="268437596" name="cellW" stackId="8" startPc="268436929"/>
+        <entry endPc="268437596" name="cellH" stackId="9" startPc="268436929"/>
+        <entry endPc="268437596" name="iconSize" stackId="10" startPc="268436929"/>
+        <entry endPc="268437596" name="i" stackId="11" startPc="268437045"/>
+        <entry endPc="268437586" name="col" stackId="12" startPc="268437045"/>
+        <entry endPc="268437586" name="row" stackId="13" startPc="268437045"/>
+        <entry endPc="268437586" name="x" stackId="14" startPc="268437045"/>
+        <entry endPc="268437586" name="y" stackId="15" startPc="268437045"/>
+        <entry endPc="268437586" name="fieldCenterX" stackId="16" startPc="268437045"/>
+        <entry endPc="268437586" name="fieldCenterY" stackId="17" startPc="268437045"/>
+        <entry endPc="268437586" name="fieldRadius" stackId="18" startPc="268437045"/>
+        <entry endPc="268437258" name="borderColor" stackId="19" startPc="268437154"/>
+        <entry endPc="268437586" name="completed" stackId="20" startPc="268437376"/>
+        <entry endPc="268437586" name="barW" stackId="21" startPc="268437376"/>
+        <entry endPc="268437586" name="barH" stackId="22" startPc="268437376"/>
+        <entry endPc="268437586" name="barX" stackId="23" startPc="268437376"/>
+        <entry endPc="268437586" name="barY" stackId="24" startPc="268437376"/>
+        <entry endPc="268437586" name="barColor" stackId="25" startPc="268437376"/>
+        <entry arg="true" endPc="268437609" name="view" stackId="1" startPc="268437598"/>
+        <entry arg="true" endPc="268437852" name="keyEvent" stackId="1" startPc="268437633"/>
+        <entry endPc="268437852" name="key" stackId="2" startPc="268437636"/>
+        <entry endPc="268437765" name="app" stackId="3" startPc="268437661"/>
+        <entry endPc="268437749" name="vibe" stackId="4" startPc="268437700"/>
+        <entry arg="true" endPc="268438094" name="dc" stackId="1" startPc="268437853"/>
+        <entry endPc="268438094" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268437864"/>
+        <entry endPc="268438094" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437864"/>
+    </localVars>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4257-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/HabitTrackerApp" offset="152" parentId="globals" symbolId="HabitTrackerApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="349" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HabitTrackerMenuDelegate" offset="411" parentId="globals" symbolId="HabitTrackerMenuDelegate" type="class"/>
+        <dataEntry label="globals/HabitTrackerView" offset="464" parentId="globals" symbolId="HabitTrackerView" type="class"/>
+        <dataEntry label="globals/HabitTrackerDelegate" offset="607" parentId="globals" symbolId="HabitTrackerDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="678" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="722" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="757" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="792" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="854" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="HabitTrackerApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="HabitTrackerMenuDelegate" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="HabitTrackerView" startPc="268435525">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="HabitTrackerDelegate" startPc="268435537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435556" name="getHabits" parent="HabitTrackerApp" startPc="268435549">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435593" name="incrementHabit" parent="HabitTrackerApp" startPc="268435557">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435702" name="checkAndResetForNewDay" parent="HabitTrackerApp" startPc="268435594">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435772" name="getInitialView" parent="HabitTrackerApp" startPc="268435703">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435806" name="resetProgress" parent="HabitTrackerApp" startPc="268435773">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435814" name="getProgress" parent="HabitTrackerApp" startPc="268435807">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435824" name="onStart" parent="HabitTrackerApp" startPc="268435815">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435920" name="saveProgress" parent="HabitTrackerApp" startPc="268435825">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435966" name="toggleHabit" parent="HabitTrackerApp" startPc="268435921">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435974" name="getSelectedIndex" parent="HabitTrackerApp" startPc="268435967">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436077" name="getCurrentDateString" parent="HabitTrackerApp" startPc="268435975">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436140" name="getCompletedCount" parent="HabitTrackerApp" startPc="268436078">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436172" name="initialize" parent="HabitTrackerApp" startPc="268436141">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436184" name="setSelectedIndex" parent="HabitTrackerApp" startPc="268436173">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436194" name="onStop" parent="HabitTrackerApp" startPc="268436185">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436261" name="onMenuItem" parent="HabitTrackerMenuDelegate" startPc="268436195">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436276" name="initialize" parent="HabitTrackerMenuDelegate" startPc="268436262">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436371" name="drawModernCheckmark" parent="HabitTrackerView" startPc="268436277">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436420" name="drawProgressCircle" parent="HabitTrackerView" startPc="268436372">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="radius"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436492" name="moveSelection" parent="HabitTrackerView" startPc="268436421">
+            <param id="move"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436590" name="drawCheckmark" parent="HabitTrackerView" startPc="268436493">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436758" name="drawModernProgressBar" parent="HabitTrackerView" startPc="268436591">
+            <param id="dc"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="width"/>
+            <param id="height"/>
+            <param id="percentage"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436794" name="onLayout" parent="HabitTrackerView" startPc="268436759">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436910" name="drawGradientShadow" parent="HabitTrackerView" startPc="268436795">
+            <param id="dc"/>
+            <param id="y"/>
+            <param id="isTop"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436925" name="initialize" parent="HabitTrackerView" startPc="268436911">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437597" name="onUpdate" parent="HabitTrackerView" startPc="268436926">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437609" name="setView" parent="HabitTrackerDelegate" startPc="268437598">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437632" name="initialize" parent="HabitTrackerDelegate" startPc="268437610">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437852" name="onKey" parent="HabitTrackerDelegate" startPc="268437633">
+            <param id="keyEvent"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438094" name="MainLayout" parent="Layouts" startPc="268437853">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438106" name="&lt;init&gt;" parent="MainMenu" startPc="268438095">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438211" name="initialize" parent="MainMenu" startPc="268438107">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

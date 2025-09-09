@@ -1,0 +1,243 @@
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Attention,4,14,23]; ]
+import Toybox.Attention;
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 6; @symbol_classdef = [HabitTrackerDelegate,6,6,26]; @symbol_extends<0> = [WatchUi,6,35,42]; @symbol_extends<1> = [BehaviorDelegate,6,43,59]; ]
+class HabitTrackerDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 7; @position = 16; @symbol_vardef = [_view,7,16,21]; @symbol_type<0> = [HabitTrackerView,7,25,41]; ]
+    private
+    var _view as HabitTrackerView or Null;
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 9; @symbol_functiondef = [initialize,9,13,23]; ]
+    function initialize() as Void {
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_9_26_12_4_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 10 8 ]
+        symbol [ BehaviorDelegate %tmp.2 10 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 10 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 11 8 ]
+        %tmp.4 = null;
+        symbol [ _view ? 11 8 13 ];
+        putv self :_view %tmp.4;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_9_26_12_4_stop:
+    }
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 14; @symbol_functiondef = [setView,14,13,20]; @symbol_param<0> = [view,14,21,25]; @symbol_param<0>_type<0> = [HabitTrackerView,14,29,45]; ]
+    function setView(view as HabitTrackerView) {
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_14_47_16_4_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 15 8 ]
+        %tmp.1 = lgetv %view;
+        symbol [ view %tmp.1 15 16 20 ];
+        symbol [ _view ? 15 8 13 ];
+        putv self :_view %tmp.1;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_14_47_16_4_stop:
+    }
+    [ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 18; @symbol_functiondef = [onKey,18,13,18]; @symbol_param<0> = [keyEvent,18,19,27]; @symbol_param<0>_type<0> = [KeyEvent,18,31,39]; @symbol_return<0> = [Boolean,18,44,51]; ]
+    function onKey(keyEvent as KeyEvent) as Boolean {
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_18_52_41_4_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 19 8 ]
+        [ "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_18_52_41_4_start" "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_18_52_41_4_stop" ]
+        %key.1 = local;
+        symbol [ key %key.1 19 12 15 ];
+        %tmp.1 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.1 19 18 26 ];
+        symbol [ getKey %tmp.2 19 27 33 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %key.1 %tmp.3;
+        symbol [ key %key.1 19 12 15 ];
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 20 8 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_stmt:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_12_20_55_begin:
+        %tmp.4 = lgetv %key.1;
+        symbol [ key %tmp.4 20 12 15 ];
+        symbol [ WatchUi %tmp.5 20 19 26 ];
+        %tmp.5 = getm $.Toybox.WatchUi;
+        symbol [ KEY_ENTER %tmp.6 20 27 36 ];
+        %tmp.6 = getv %tmp.5 :KEY_ENTER;
+        %tmp.7 = eq %tmp.4 %tmp.6;
+        bt %tmp.7 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_true;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_40_20_55_false:
+        %tmp.8 = lgetv %key.1;
+        symbol [ key %tmp.8 20 40 43 ];
+        symbol [ WatchUi %tmp.9 20 47 54 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ KEY_START %tmp.10 20 55 64 ];
+        %tmp.10 = getv %tmp.9 :KEY_START;
+        %tmp.11 = eq %tmp.8 %tmp.10;
+        push %tmp.11;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_40_20_55_end:
+        %tmp.12 = phi [%tmp.7 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_12_20_55_begin] [%tmp.11 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_40_20_55_false] [%tmp.12 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_40_20_55_end];
+        bf %tmp.12 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_false;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_66_29_8_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 21 12 ]
+        [ "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_66_29_8_start" "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_66_29_8_stop" ]
+        %app.2 = local;
+        symbol [ app %app.2 21 16 19 ];
+        symbol [ Application %tmp.14 21 22 33 ];
+        %tmp.14 = getv ? :Application;
+        symbol [ getApp %tmp.15 21 34 40 ];
+        %tmp.15 = getv function %tmp.14 :getApp;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = as %tmp.16 HabitTrackerApp;
+        symbol [ HabitTrackerApp %tmp.17 21 46 61 ];
+        lputv %app.2 %tmp.17;
+        symbol [ app %app.2 21 16 19 ];
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 22 12 ]
+        %tmp.18 = lgetv %app.2;
+        symbol [ app %tmp.18 22 12 15 ];
+        symbol [ toggleHabit %tmp.19 22 16 27 ];
+        %tmp.19 = getv function %tmp.18 :toggleHabit;
+        %tmp.20 = lgetv %app.2;
+        symbol [ app %tmp.20 22 28 31 ];
+        symbol [ getSelectedIndex %tmp.21 22 32 48 ];
+        %tmp.21 = getv function %tmp.20 :getSelectedIndex;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        invoke %tmp.18 %tmp.19(%tmp.22);
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 23 12 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_12_26_12_if_stmt:
+        symbol [ Attention %tmp.23 23 16 25 ];
+        %tmp.23 = getm $.Toybox.Attention;
+        %tmp.24 = null;
+        %tmp.25 = ne %tmp.23 %tmp.24;
+        bf %tmp.25 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_12_26_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_12_26_12_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_35_26_12_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 24 16 ]
+        [ "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_35_26_12_start" "C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_35_26_12_stop" ]
+        %vibe.3 = local;
+        symbol [ vibe %vibe.3 24 20 24 ];
+        symbol [ Attention %tmp.28 24 31 40 ];
+        %tmp.28 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.29 24 41 52 ];
+        %tmp.29 = getv function ? %tmp.28 :VibeProfile;
+        %tmp.30 = 50;
+        %tmp.31 = 100;
+        %tmp.26 = newc %tmp.29 (%tmp.30, %tmp.31);
+        lputv %vibe.3 %tmp.26;
+        symbol [ vibe %vibe.3 24 20 24 ];
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 25 16 ]
+        symbol [ Attention %tmp.32 25 16 25 ];
+        %tmp.32 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.33 25 26 33 ];
+        %tmp.33 = getv function %tmp.32 :vibrate;
+        %tmp.34 = newa 1;
+        %tmp.35 = lgetv %vibe.3;
+        symbol [ vibe %tmp.35 25 35 39 ];
+        %tmp.36 = dup %tmp.34;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        invoke %tmp.32 %tmp.33(%tmp.37);
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_35_26_12_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_12_26_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_23_12_26_12_if_end:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 27 12 ]
+        symbol [ WatchUi %tmp.38 27 12 19 ];
+        %tmp.38 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.39 27 20 33 ];
+        %tmp.39 = getv function %tmp.38 :requestUpdate;
+        invoke %tmp.38 %tmp.39();
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 28 12 ]
+        %tmp.40 = true;
+        ret %tmp.40;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_66_29_8_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_false:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 29 15 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_stmt:
+        %tmp.41 = lgetv %key.1;
+        symbol [ key %tmp.41 29 19 22 ];
+        symbol [ WatchUi %tmp.42 29 26 33 ];
+        %tmp.42 = getm $.Toybox.WatchUi;
+        symbol [ KEY_UP %tmp.43 29 34 40 ];
+        %tmp.43 = getv %tmp.42 :KEY_UP;
+        %tmp.44 = eq %tmp.41 %tmp.43;
+        bf %tmp.44 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_false;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_42_34_8_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 30 12 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_12_32_12_if_stmt:
+        symbol [ _view %tmp.46 30 16 21 ];
+        %tmp.46 = getv ? :_view;
+        %tmp.47 = null;
+        %tmp.48 = ne %tmp.46 %tmp.47;
+        bf %tmp.48 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_12_32_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_12_32_12_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_31_32_12_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 31 16 ]
+        symbol [ _view %tmp.50 31 16 21 ];
+        %tmp.50 = getv ? :_view;
+        %tmp.51 = as %tmp.50 { (!Null) };
+        symbol [ moveSelection %tmp.52 31 22 35 ];
+        %tmp.52 = getv function %tmp.51 :moveSelection;
+        %tmp.53 = -1;
+        invoke %tmp.51 %tmp.52(%tmp.53);
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_31_32_12_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_12_32_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_30_12_32_12_if_end:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 33 12 ]
+        %tmp.54 = true;
+        ret %tmp.54;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_42_34_8_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_false:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 34 15 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_15_39_8_if_stmt:
+        %tmp.55 = lgetv %key.1;
+        symbol [ key %tmp.55 34 19 22 ];
+        symbol [ WatchUi %tmp.56 34 26 33 ];
+        %tmp.56 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.57 34 34 42 ];
+        %tmp.57 = getv %tmp.56 :KEY_DOWN;
+        %tmp.58 = eq %tmp.55 %tmp.57;
+        bf %tmp.58 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_15_39_8_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_15_39_8_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_44_39_8_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 35 12 ]
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_12_37_12_if_stmt:
+        symbol [ _view %tmp.60 35 16 21 ];
+        %tmp.60 = getv ? :_view;
+        %tmp.61 = null;
+        %tmp.62 = ne %tmp.60 %tmp.61;
+        bf %tmp.62 @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_12_37_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_12_37_12_if_true:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_31_37_12_start:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 36 16 ]
+        symbol [ _view %tmp.64 36 16 21 ];
+        %tmp.64 = getv ? :_view;
+        %tmp.65 = as %tmp.64 { (!Null) };
+        symbol [ moveSelection %tmp.66 36 22 35 ];
+        %tmp.66 = getv function %tmp.65 :moveSelection;
+        %tmp.67 = 1;
+        invoke %tmp.65 %tmp.66(%tmp.67);
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_31_37_12_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_12_37_12_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_35_12_37_12_if_end:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 38 12 ]
+        %tmp.68 = true;
+        ret %tmp.68;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_44_39_8_stop:
+        goto @C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_15_39_8_if_end;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_34_15_39_8_if_end:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_29_15_39_8_if_end:
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_20_8_39_8_if_end:
+[ "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc" 40 8 ]
+        %tmp.69 = false;
+        ret %tmp.69;
+C__Users_petar_Desktop_HabitTracker_source_HabitTrackerDelegate_mc_18_52_41_4_stop:
+    }
+}
+[ @file = "C:\Users\petar\Desktop\HabitTracker\source\HabitTrackerDelegate.mc"; @line = 1; ]
+<init> {
+}

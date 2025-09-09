@@ -1,0 +1,15 @@
+# Ignore compiled output
+bin/
+
+# Ignore logs from Garmin devices
+GARMIN/APPS/LOGS/
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore IDE-specific files (if using Eclipse or VS Code)
+.settings/
+.vscode/
+.project
+.classpath
