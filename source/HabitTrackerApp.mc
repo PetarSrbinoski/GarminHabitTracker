@@ -40,86 +40,83 @@ class HabitTrackerApp extends Application.AppBase {
         return [view, delegate];
     }
 
-    function saveProgress() {
-    var storage = {};
-    for (var i = 0; i < _progress.size(); i++) {
-        storage.put(i, _progress[i]);
+    function getCurrentDayNumber() {
+        var now = Time.now();
+        var daysSinceEpoch = now.value() / (24 * 60 * 60); 
+        return daysSinceEpoch.toNumber(); 
     }
-    storage.put(100, getCurrentDateString()); // Keep this for debugging if needed
-    storage.put(300, getCurrentDayNumber()); // Add day number
-    storage.put(200, _history.size());
-    for (var i = 0; i < _history.size(); i++) {
-        storage.put(201 + i, _history[i]);
-    }
-    Application.Storage.setValue("habits", storage);
-}
 
-   function checkAndResetForNewDay() {
-    var storage = Application.Storage.getValue("habits");
-    var todayDayNumber = getCurrentDayNumber();
-    
-    if (storage != null) {
-        var lastSavedDayNumber = storage.get(300); // Using key 300 for day number
-        var historySize = storage.get(200);
-        if (historySize == null) { historySize = 0; }
-        
-        // Load history
-        var loadedHistory = new Array<Number>[historySize];
-        for (var i = 0; i < historySize; i++) {
-            var histVal = storage.get(201 + i);
-            loadedHistory[i] = (histVal == null) ? 0 : histVal;
+    function saveProgress() {
+        var storage = {};
+        for (var i = 0; i < _progress.size(); i++) {
+            storage.put(i, _progress[i]);
         }
-        _history = loadedHistory;
-        
-        // Load current progress
-        for (var i = 0; i < 5; i++) {
-            var v = storage.get(i);
-            _progress[i] = (v == null) ? 0 : v;
+        storage.put(100, getCurrentDateString());
+        storage.put(300, getCurrentDayNumber()); 
+        storage.put(200, _history.size());
+        for (var i = 0; i < _history.size(); i++) {
+            storage.put(201 + i, _history[i]);
         }
+        Application.Storage.setValue("habits", storage);
+    }
+
+    function checkAndResetForNewDay() {
+        var storage = Application.Storage.getValue("habits");
+        var todayDayNumber = getCurrentDayNumber();
         
-        // Check if it's a new day using day numbers
-        if (lastSavedDayNumber != null && lastSavedDayNumber < todayDayNumber) {
-            // It's definitely a new day - calculate yesterday's completed count
-            var yesterdayCount = 0;
+        if (storage != null) {
+            var lastSavedDayNumber = storage.get(300); 
+            var historySize = storage.get(200);
+            if (historySize == null) { historySize = 0; }
+           
+            var loadedHistory = new Array<Number>[historySize];
+            for (var i = 0; i < historySize; i++) {
+                var histVal = storage.get(201 + i);
+                loadedHistory[i] = (histVal == null) ? 0 : histVal;
+            }
+            _history = loadedHistory;
+       
+       
             for (var i = 0; i < 5; i++) {
-                if (_progress[i] >= 1) { 
-                    yesterdayCount++; 
-                }
+                var v = storage.get(i);
+                _progress[i] = (v == null) ? 0 : v;
             }
             
-            // Add yesterday's count to history
-            _history.add(yesterdayCount);
-            
-            // Keep only last 6 days in history (plus today will make 7)
-            if (_history.size() > 6) {
-                var newHist = new Array<Number>[6];
-                var startIdx = _history.size() - 6;
-                for (var i = 0; i < 6; i++) { 
-                    newHist[i] = _history[startIdx + i]; 
+            if (lastSavedDayNumber != null && lastSavedDayNumber < todayDayNumber) {
+                var yesterdayCount = 0;
+                for (var i = 0; i < 5; i++) {
+                    if (_progress[i] >= 1) { 
+                        yesterdayCount++; 
+                    }
                 }
-                _history = newHist;
+                
+                _history.add(yesterdayCount);
+                
+                if (_history.size() > 6) {
+                    var newHist = new Array<Number>[6];
+                    var startIdx = _history.size() - 6;
+                    for (var i = 0; i < 6; i++) { 
+                        newHist[i] = _history[startIdx + i]; 
+                    }
+                    _history = newHist;
+                }
+                
+                for (var i = 0; i < 5; i++) { 
+                    _progress[i] = 0; 
+                }
+                
+                saveProgress();
             }
             
-            // Reset progress for the new day
+        } else {
+            _progress = new Array<Number>[5];
             for (var i = 0; i < 5; i++) { 
                 _progress[i] = 0; 
             }
-            
-            // Save with new day number
+            _history = new Array<Number>[0];
             saveProgress();
         }
-        // If lastSavedDayNumber == todayDayNumber, it's the same day - don't reset
-        
-    } else {
-        // First time running the app
-        _progress = new Array<Number>[5];
-        for (var i = 0; i < 5; i++) { 
-            _progress[i] = 0; 
-        }
-        _history = new Array<Number>[0];
-        saveProgress();
     }
-}
 
     function getCurrentDateString() {
         var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
@@ -164,23 +161,17 @@ class HabitTrackerApp extends Application.AppBase {
     }
 
     function getHistoryWithToday() as Array<Number> {
-        var histFull = new Array<Number>[_history.size()];
-        for (var i = 0; i < _history.size(); i++) { histFull[i] = _history[i]; }
-        var lastEntryIsToday = false;
-        if (histFull.size() > 0 && histFull[histFull.size()-1] == getCompletedCount()) {
-            lastEntryIsToday = true;
+        var histWithToday = new Array<Number>[_history.size() + 1];
+        for (var i = 0; i < _history.size(); i++) { 
+            histWithToday[i] = _history[i]; 
         }
-        var histWithToday;
-        if (lastEntryIsToday) {
-            histWithToday = histFull;
-        } else {
-            histWithToday = new Array<Number>[histFull.size()+1];
-            for (var i = 0; i < histFull.size(); i++) { histWithToday[i] = histFull[i]; }
-            histWithToday[histFull.size()] = getCompletedCount();
-        }
+        histWithToday[_history.size()] = getCompletedCount();
+        
         if (histWithToday.size() > 7) {
             var last7 = new Array<Number>[7];
-            for (var i = 0; i < 7; i++) { last7[i] = histWithToday[histWithToday.size()-7 + i]; }
+            for (var i = 0; i < 7; i++) { 
+                last7[i] = histWithToday[histWithToday.size() - 7 + i]; 
+            }
             return last7;
         }
         return histWithToday;
@@ -205,9 +196,4 @@ class HabitTrackerApp extends Application.AppBase {
 
 function getApp() as HabitTrackerApp {
     return Application.getApp() as HabitTrackerApp;
-}
-function getCurrentDayNumber() {
-    var now = Time.now();
-    var daysSinceEpoch = now.value() / (24 * 60 * 60); // Convert seconds to days
-    return daysSinceEpoch.toNumber(); // This gives us the day number since Unix epoch
 }

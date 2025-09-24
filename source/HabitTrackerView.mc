@@ -33,7 +33,7 @@ class HabitTrackerView extends WatchUi.View {
             var progress = app.getProgress();
             var selectedIndex = app.getSelectedIndex();
 
-            var emojis = ["💊", "🧪", "🏋️", "📚", "🧘"];
+            var emojis = ["D3", "Zn", "Om", "B", "Mg"];
 
             var cols = 2;
             var rows = 3;
